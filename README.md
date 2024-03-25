@@ -77,7 +77,7 @@
 
 3. Update the styles to apply the changes for ***projectsection***
 
-    Add the following styles for projectsection
+    Add the following styles for projectsection.
 
     ```css
     /* Start of styling projectsection */
@@ -158,4 +158,34 @@
 
     /* ***************************** */
     /* End of styling projectsection */
+    ```
+
+4. Add within `projectsection` the below for users to go to the top of the page:
+
+    ```HTML
+    <div class="top">
+        <a href="#top">&#x25B2; Back to Top</a>
+    </div>
+    ```
+5. To style the contents for **Back to Top**, include the following styles:
+
+    ```css
+    /* Start of styling miscellaneous elements */
+    /* *************************************** */
+
+    .top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top a{
+        margin-top: 20px;
+        text-decoration: none;
+        color: lightseagreen;
+        font-size: small;
+    }
+
+    /* ************************************* */
+    /* End of styling miscellaneous elements */
     ```
