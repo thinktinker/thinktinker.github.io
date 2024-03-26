@@ -162,7 +162,7 @@
     }
 
     /* set the <a> tags' styles */
-    .linkcontainer a{
+    button[type="submit"], .linkcontainer a{
         padding: 10px 20px;
         font-size: 16px;
         background: teal;
@@ -278,6 +278,62 @@
 
     /* ***************************** */
     /* End of styling projectsection */
+    
+    
+    /* Start styling contactsection */
+    /* ***************************** */
+
+    /* Set the contactsection style */
+    #contactsection{
+        width: 80%;
+        margin: auto;
+        height: 100dvh;
+    }
+
+    /* Set the contactioncontainer sytle */
+    .contactcontainer{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+        padding: 20px;
+        border-radius: 20px;
+        border: 2px solid rgba(31, 179, 171, 0.3)
+    }
+
+    /* Set style for form label */
+    label{
+        display: block;
+    }
+
+    /* Set style for form inputs */
+    input[type="text"], input[type="email"], textarea{
+        width: 400px;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        font-size: medium;
+        color: lightseagreen;
+        border: 1px solid lightseagreen;
+        border-radius: 10px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    /* Set style for reset button */
+    button[type="reset"]{
+        padding: 10px 20px;
+        font-size: 16px;
+        background: lightgray;
+        color: #000000;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        margin-right: 5px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    /* ***************************** */
+    /* End of styling contactsection */
 
     
     /* Start of styling miscellaneous elements */
@@ -294,6 +350,13 @@
         text-decoration: none;
         color: lightseagreen;
         font-size: small;
+    }
+
+    .divider{
+        margin: auto;
+        width: 80%;
+        height: 5em;
+        border-top: 1px dashed rgba(31, 178, 171, 0.2);
     }
 
     /* ************************************* */
@@ -459,6 +522,45 @@
     </section>
     <!-- End of project section -->
 
+    <!-- Start of divider -->
+    <div class="divider">
+        <!-- This is a placeholder to create a divider -->
+    </div>
+    <!-- End of divider -->
+
+    <!-- Start of contact section -->
+    <a name="contact"></a>
+    <section id="contactsection">
+        <div class="sectiontitle">Let's Talk!</div>
+        
+        <div class="contactcontainer">
+            <form>
+                <div>
+                    <!-- input for user's name -->
+                    <label for="nameControlInput">Name:</label>
+                    <input type="text" id="nameControlInput" placeholder="e.g. John Doe">
+                </div>
+                <div>
+                    <!-- input for user's email -->
+                    <label for="emailControlInput">Email Address:</label>
+                    <input type="email" id="emailControlInput" placeholder="name@example.com">
+                </div>
+                <div>
+                    <!-- input for user's message -->
+                    <label for="messageControlInput">Message:</label>
+                    <textarea id="messageControlInput" rows="3"></textarea>
+                </div>
+                    <!-- submit button here -->
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+            </form>
+        </div>
+
+        <div class="top">
+            <a href="#top">&#x25B2; Back to Top</a>
+        </div>
+    </section>
+    <!-- End of contact section -->
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
