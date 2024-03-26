@@ -162,7 +162,7 @@
     }
 
     /* set the <a> tags' styles */
-    .linkcontainer a{
+    button[type = "submit"], .linkcontainer a{
         padding: 10px 20px;
         font-size: 16px;
         background: teal;
@@ -279,6 +279,49 @@
     /* ***************************** */
     /* End of styling projectsection */
 
+    /* Start of styling contactsection */
+    /* ******************************* */
+
+    /* Set contactsection's style*/
+    #contactsection {
+        width: 80%;
+        margin: auto;
+        height: 100dvh;
+    }
+
+    /* set the profilecontainer */
+    .contactcontainer {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: normal;
+        padding: 20px;
+        border-radius: 20px;
+        border: 2px solid rgb(31, 178, 170, 0.3);
+    }
+
+    /* set the labels */
+    label{
+        display: block;
+    }
+
+    input[type=text], input[type=email], textarea{
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        width: 400px;
+        font-size: medium;
+        color: lightseagreen;
+        border: 1px solid lightseagreen;
+        border-radius: 10px;
+        margin-right: 5px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    /* ***************************** */
+    /* End of styling contactsection */
+
     
     /* Start of styling miscellaneous elements */
     /* *************************************** */
@@ -294,6 +337,13 @@
         text-decoration: none;
         color: lightseagreen;
         font-size: small;
+    }
+
+    .divider{
+        margin: auto;
+        width: 80%;
+        height: 5em;
+        border-top: 1px dashed lightgray;
     }
 
     /* ************************************* */
@@ -364,7 +414,6 @@
         </div>
     </section>
     <!-- End of mainsection -->
-
 
     <!-- Start of project section, uses grids -->
     <a name="projects"></a>    
@@ -459,6 +508,39 @@
     </section>
     <!-- End of project section -->
 
+    <div class="divider">
+        <!-- Create a divider here -->
+    </div>
+
+    <!-- Start of contact section -->
+    <a name="contact"></a>    
+    <section id="contactsection">
+
+        <div class="sectiontitle">Let's Talk</div>
+        <div class="contactcontainer">
+            <form>
+                <div>
+                    <label for="nameControlInput">Name:</label>
+                    <input type="text" id="nameControlInput" placeholder="e.g. John Doe">
+                </div>
+                
+                <div>
+                    <label for="emailControlInput">Email address:</label>
+                    <input type="email" id="emailControlInput" placeholder="name@example.com">
+                </div>
+                <div>
+                    <label for="messageControlInput">Message:</label>
+                    <textarea id="messageControlInput" rows="3"></textarea>
+                </div>
+                <button type="submit">Submit Enquiry</button>
+                </form>
+        </div>
+
+        <div class="top">
+            <a href="#top">&#x25B2; Back to Top</a>
+        </div>
+    </section>
+    <!-- End of contact section -->
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
